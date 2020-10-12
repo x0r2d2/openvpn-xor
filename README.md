@@ -20,5 +20,5 @@ Clients:
 
 1. Windows: https://github.com/lawtancool/openvpn-windows-xor
 2. Android: VPN Client Pro - https://play.google.com/store/apps/details?id=it.colucciweb.vpnclientpro&hl=en_US&gl=US
-3. iOS: not ready yet
+3. iOS: not available yet
 4. Linux: install deb file as server side
