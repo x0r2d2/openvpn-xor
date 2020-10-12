@@ -13,7 +13,7 @@ How to install it quickly on Ubuntu 18.04 amd64:
    `scramble obfuscate yourpassword`
    (password can be generated with "openssl rand -base64 24")
 8. Restart the openvpn (systemctl restart openvpn@server.service)
-9. Add "scramble obfuscate yourpassword" to your openvpn profile and connect.
+9. Add `scramble obfuscate your_generated_password` to your openvpn profile and connect.
 10. Profit!
 
 Clients: 
