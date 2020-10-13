@@ -1,5 +1,5 @@
 # openvpn-xor
-Openvpn with xor patch applied
+Openvpn with Tunnelblick's xor patch applied
 
 How to install it quickly on Ubuntu 18.04 amd64:
 
