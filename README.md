@@ -6,10 +6,11 @@ How to install it quickly on Ubuntu 18.04 amd64:
 1. `nano /etc/apt/sources.list`
 2. uncomment some sources with src mask
 3. `apt-get update && apt-get build-dep openvpn -y`
-4. `wget --no-check-cert https://github.com/hybtoy/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb`
-5. `dpkg -i openvpn_2.4.8-bionic0_amd64.deb`
-6. `wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh`
-7. Add this option to server.conf file of openvpn: 
+4. `wget --no-check-cert https://github.com/hybtoy/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb` for Ubuntu 18.04
+5. `wget --no-check-cert https://github.com/hybtoy/openvpn-xor/raw/main/openvpn_2.4.8-buster0_amd64.deb` for Debian 10
+6. `dpkg -i openvpn_2.4.8-bionic0_amd64.deb`
+7. `wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh`
+8. Add this option to server.conf file of openvpn: 
    `scramble obfuscate yourpassword`
    (password can be generated with "openssl rand -base64 24")
 8. Restart the openvpn `systemctl restart openvpn@server.service`
