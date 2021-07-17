@@ -2,23 +2,55 @@
 Openvpn with Tunnelblick's xor patch applied
 
 How to install it quickly on Ubuntu 18.04 amd64:
-
-1.
+1. 
 ```
 nano /etc/apt/sources.list
 ```
-2. uncomment some sources with src mask
-3. ```apt-get update && apt-get build-dep openvpn -y```
-4. `wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb` for Ubuntu 18.04
-6. `wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-buster0_amd64.deb` for Debian 10
-7. `dpkg -i openvpn_2.4.8-bionic0_amd64.deb` for Ubuntu and `dpkg -i openvpn_2.4.8-buster0_amd64.deb` for Debian
-8. `wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh`
-9. Add this option to server.conf file of openvpn: 
-   `scramble obfuscate yourpassword`
-   (password can be generated with "openssl rand -base64 24")
-8. Restart the openvpn `systemctl restart openvpn@server.service`
-9. Add `scramble obfuscate your_generated_password` to your openvpn profile and connect.
-10. Profit!
+uncomment first 2-3 sources with src mask
+
+2. 
+```
+apt-get update && apt-get build-dep openvpn -y
+```
+
+Ubuntu 18.04
+```
+wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb
+```
+
+```
+dpkg -i openvpn_2.4.8-bionic0_amd64.deb
+```
+
+Debian 10
+
+```
+wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-buster0_amd64.deb
+```
+```
+dpkg -i openvpn_2.4.8-buster0_amd64.deb
+```
+
+3. Install openvpn
+
+```
+wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh
+```
+
+4. Add this option to server.conf file of openvpn: 
+```
+scramble obfuscate yourpassword
+```
+(password can be generated with "openssl rand -base64 24")
+
+5. Restart the openvpn 
+
+```
+systemctl restart openvpn@server.service
+```
+
+Add ```scramble obfuscate your_generated_password``` to your openvpn profile and connect.
+
 
 Clients: 
 
