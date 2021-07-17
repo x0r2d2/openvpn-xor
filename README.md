@@ -8,7 +8,7 @@ How to install it quickly on Ubuntu 18.04 amd64:
 nano /etc/apt/sources.list
 ```
 2. uncomment some sources with src mask
-3. `apt-get update && apt-get build-dep openvpn -y`
+3. ```apt-get update && apt-get build-dep openvpn -y```
 4. `wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb` for Ubuntu 18.04
 6. `wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-buster0_amd64.deb` for Debian 10
 7. `dpkg -i openvpn_2.4.8-bionic0_amd64.deb` for Ubuntu and `dpkg -i openvpn_2.4.8-buster0_amd64.deb` for Debian
