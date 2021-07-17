@@ -42,7 +42,7 @@ wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh
 ```
 scramble obfuscate yourpassword
 ```
-(password can be generated with "openssl rand -base64 24")
+*password can be generated with "openssl rand -base64 24*
 
 5. Restart the openvpn 
 
