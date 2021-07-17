@@ -1,7 +1,8 @@
 # openvpn-xor
 Openvpn with Tunnelblick's xor patch applied
 
-How to install it quickly on Ubuntu 18.04 amd64:
+How to install it quickly on Ubuntu 18.04 amd64 and Debian 10:
+
 1. 
 ```
 nano /etc/apt/sources.list
