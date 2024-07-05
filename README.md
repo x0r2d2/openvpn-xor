@@ -1,57 +1,26 @@
 # openvpn-xor
 Openvpn with Tunnelblick's xor patch applied
 
-How to install it quickly on Ubuntu 18.04 amd64 and Debian 10:
+Ubuntu 22.04 / Debian 11
 
-1. 
-```
-nano /etc/apt/sources.list
-```
-uncomment first 2-3 sources with src mask
-
-2. 
-```
-apt-get update && apt-get build-dep openvpn -y
-```
-
-Ubuntu 18.04
-```
-wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-bionic0_amd64.deb
-```
-
-```
-dpkg -i openvpn_2.4.8-bionic0_amd64.deb
-```
-
-Debian 10
-
-```
-wget --no-check-cert https://github.com/R2D2me/openvpn-xor/raw/main/openvpn_2.4.8-buster0_amd64.deb
-```
-```
-dpkg -i openvpn_2.4.8-buster0_amd64.deb
-```
-
-3. Install openvpn
-
+1. Install OpenVPN via Angristan's script
 ```
 wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh
 ```
 
-4. Add this option to server.conf file of openvpn: 
+2. Remove openvpn package
 ```
-scramble obfuscate yourpassword
-```
-*password can be generated with "openssl rand -base64 24*
-
-5. Restart the openvpn 
-
-```
-systemctl restart openvpn@server.service
+apt remove openvpn -y
 ```
 
-Add ```scramble obfuscate your_generated_password``` to your openvpn profile and connect.
-
+3. Install Openvpn with xor patch applied
+```
+wget https://raw.githubusercontent.com/x0r2d2/openvpn-xor/main/openvpn_xor_install.sh -O openvpn_xor_install.sh && bash openvpn_xor_install.sh
+```
+4. Add/remove clients via Angristan's script (openvpn-install.sh)
+```
+bash openvpn-install.sh
+```
 
 Clients: 
 
