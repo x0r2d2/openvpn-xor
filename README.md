@@ -13,7 +13,7 @@ wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh
 apt remove openvpn -y
 ```
 
-3. Install Openvpn with xor patch applied
+3. Install Openvpn (2.5.9) with xor patch applied
 ```
 wget https://raw.githubusercontent.com/x0r2d2/openvpn-xor/main/openvpn_xor_install.sh -O openvpn_xor_install.sh && bash openvpn_xor_install.sh
 ```
