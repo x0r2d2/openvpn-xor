@@ -13,7 +13,7 @@ wget https://git.io/v1jlQ -O openvpn-install.sh && bash openvpn-install.sh
 apt remove openvpn -y
 ```
 
-3. Install Openvpn (2.5.9) with xor patch applied
+3. Install OpenVPN (2.5.9) with xor patch applied
 ```
 wget https://raw.githubusercontent.com/x0r2d2/openvpn-xor/main/openvpn_xor_install.sh -O openvpn_xor_install.sh && bash openvpn_xor_install.sh
 ```
@@ -25,6 +25,6 @@ bash openvpn-install.sh
 Clients: 
 
 1. Windows: https://github.com/lawtancool/openvpn-windows-xor
-2. Android: VPN Client Pro - https://play.google.com/store/apps/details?id=it.colucciweb.vpnclientpro&hl=en_US&gl=US
-3. iOS: not available yet
-4. Linux: install deb file as server side
+2. Android: [VPN Client Pro](https://play.google.com/store/apps/details?id=it.colucciweb.vpnclientpro&hl=en_US&gl=US)
+3. iOS: [Passepartout, VPN Client](https://apps.apple.com/us/app/passepartout-vpn-client/id1433648537)
+4. Install via script and add config as client to /etc/openvpn/client and create service file or start manually.
