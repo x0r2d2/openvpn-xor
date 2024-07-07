@@ -88,6 +88,7 @@ EOL
 
     echo "Reloading systemd daemon and enabling OpenVPN service..."
     systemctl daemon-reload
+    systemctl enable openvpn@server.service
     echo "OpenVPN service has been enabled."
 }
 
