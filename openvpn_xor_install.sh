@@ -20,7 +20,7 @@ update_system() {
 # Function to install dependencies
 install_dependencies() {
     echo "Installing dependencies..."
-    apt install -y sudo iptables wget net-tools bmon netfilter-persistent iptables-persistent build-essential libssl-dev liblzo2-dev libpam0g-dev easy-rsa git openssl lz4 gcc cmake telnet curl make lsof
+    apt install -y sudo wget net-tools sudo bmon build-essential libssl-dev liblzo2-dev libpam0g-dev easy-rsa git openssl lz4 gcc cmake telnet curl make lsof
 }
 
 # Function to download and prepare OpenVPN source
